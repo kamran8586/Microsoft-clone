@@ -6,17 +6,157 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/output.css">
+    <link rel="stylesheet" href="style/myStyle.css">
+    <link rel="stylesheet" href="fontawesome/all.min.css">
     <title>Microsoft</title>
 </head>
 
 <body>
-    <div class="container lg:w-[90%] lg:mx-auto bg-primary">
-        <header class="navbar">
-            <div class="logo">
+    <div class="container lg:w-[90%] lg:mx-auto mt-5">
+        <!-- Heading start..... -->
+        <header class="navbar lg:flex lg:items-center">
+            <a href="#home" class="logo lg:flex lg:space-x-2 lg:items-center">
+                <img src="images/logo.jpg" alt="Microsoft" class="w-6 z-50">
+                <div class="para text-gray-700 font-semibold lg:text-xl">Microsoft</div>
+            </a>
+            <ul class="nav-left lg:flex lg:items-center lg:ml-9 lg:space-x-4 lg:text-xs">
+                <li><a href="#ms365" class="underline-on-hover lg:relative lg:py-1">Microsoft 365 </a></li>
+                <li><a href=" #office" class="underline-on-hover lg:relative lg:py-1">Office</a></li>
+                <li><a href="#windows" class="underline-on-hover lg:relative lg:py-1">Windows</a></li>
+                <li><a href="#support" class="underline-on-hover lg:relative lg:py-1">Support</a></li>
+            </ul>
+            <ul class="nav-right lg:ml-auto lg:flex lg:space-x-5 lg:text-sm">
+                <li class="dropdown">
+                    <a href="#allms"
+                        class="show-all-microsoft underline-on-hover lg:relative lg:py-1 lg:text-xs inline-block">All
+                        Microsoft <i class="fa-solid fa-caret-down text-gray-600 inline-block ml-1"></i></a>
+                </li>
 
+                <li><a href="#search" class="underline-on-hover lg:relative lg:py-1">
+                        Search <i class="fa-solid fa-magnifying-glass text-gray-600 inline-block ml-1"></i></a>
+                </li>
+                <li><a href="#card" class="underline-on-hover lg:relative lg:py-1">
+                        Cart <i class="fa-solid fa-shopping-cart text-gray-600 inline-block ml-1"></i></a>
+                </li>
+                <li><a href="signin" class="underline-on-hover lg:relative lg:py-1">Sign in <i
+                            class="fa-solid fa-user-plus text-gray-600 inline-block ml-1"></i></a>
+                </li>
+            </ul>
+
+            <!-- All Microsoft modal box start -->
+            <div class="modal-container h-screen w-full absolute top-0 left-0 hidden">
+                <div
+                    class="modal-body h-[400px] border w-4/5 absolute top-14 right-10 bg-white shadow-[5px_20px_60px_-15px_rgba(0,0,0,0.3)]">
+                    <ul class="heading flex lg:space-x-20 text-sm font-bold  pt-5 lg:pr-1 select-none">
+                        <li class="mx-7">
+                            Software
+                            <ul class="font-medium lg:space-y-5 mt-8 lg:flex flex-col text-sm">
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Windows
+                                    App</li>
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">One Drive
+                                </li>
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Outlook
+                                </li>
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Skype</li>
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">One Note
+                                </li>
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Microsoft
+                                    Team
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            PCs & Devices
+                            <ul class="font-medium lg:space-y-5 mt-8 lg:flex flex-col text-sm">
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Shop Xbox
+                                </li>
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Accessories
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Entertainment
+                            <ul class="font-medium lg:space-y-5 mt-8 lg:flex flex-col text-sm">
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Xbox games
+                                </li>
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">PC games
+                                </li>
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Windows
+                                    digital games
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Business
+                            <ul class="font-medium lg:space-y-5 mt-8 lg:flex flex-col text-sm">
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Microsoft
+                                    Cloud
+                                </li>
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Microsoft
+                                    Azure
+                                </li>
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Microsoft
+                                    Dynamic 365
+                                </li>
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Microsoft
+                                    365
+                                </li>
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Windows
+                                    365
+                                </li>
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Microsoft
+                                    Industry
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Developer & IT
+                            <ul class="font-medium lg:space-y-5 mt-8 lg:flex flex-col text-sm">
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">. NET
+                                </li>
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Visual
+                                    studio
+                                </li>
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Windows
+                                    Server
+                                </li>
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Windows dev
+                                    center
+                                </li>
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Docs
+                                </li>
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Power
+                                    Platform
+                                </li>
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Power
+                                    Apps
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Other
+                            <ul class="font-medium lg:space-y-5 mt-8 lg:flex flex-col text-sm">
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Free
+                                    downloads & security
+                                </li>
+                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Education
+                                </li>
+                            </ul>
+                        </li>
+                        </li>
+                    </ul>
+                    <div class="view-site-map  absolute bottom-1 flex justify-center mt-7 w-full py-2 bg-gray-200">
+                        <a href="https://www.microsoft.com/en-us/store/apps/microsoft-edge/9nblggh5hgjg"
+                            class="underline-on-hover inline-block w-fit relative">View Site Map <i
+                                class="fa-solid fa-angle-right inline-block mx-1"></i></a>
+                    </div>
+                    <div class="divider h-[2px] bg-black w-full absolute bottom-0">
+
+                    </div>
+                </div>
             </div>
+            <!-- All Microsoft modal box end -->
         </header>
+        <!-- Header ends -->
     </div>
+    <script src=" fontawesome/all.min.js"></script>
+    <script src="controle/app.js"></script>
 </body>
 
 </html>

@@ -10,7 +10,10 @@
 }
 
 .modal-container {
-  background-color: rgba(0, 0, 0, 0.3);
   pointer-events: none;
+}
+
+.show-modal {
+  pointer-events: all;
 }
 /*# sourceMappingURL=myStyle.css.map */

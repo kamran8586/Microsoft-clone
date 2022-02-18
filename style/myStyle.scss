@@ -1,3 +1,6 @@
+$primary: #ffb900;
+
+
 .underline-on-hover:hover::after {
     content: "";
     display: block;
@@ -15,4 +18,26 @@
 
 .show-modal {
     pointer-events: all;
+}
+
+.home-page {
+    background-image: url(../images/homepage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 550px;
+}
+
+.new-button {
+    background-color: $primary;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 18px;
+    text-align: center;
+    border: 1px solid block;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
 }

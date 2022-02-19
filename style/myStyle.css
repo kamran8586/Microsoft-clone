@@ -38,4 +38,12 @@
   margin: 4px 2px;
   cursor: pointer;
 }
+
+.ms-for-android {
+  background-image: url(../images/outlookforandroid.jpg);
+  height: 550px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 /*# sourceMappingURL=myStyle.css.map */

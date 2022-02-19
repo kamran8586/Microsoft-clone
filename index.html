@@ -12,7 +12,8 @@
 </head>
 
 <body>
-    <div class="container lg:w-[90%] lg:mx-auto mt-5 h-fit">
+    <!-- container start -->
+    <div class="container lg:w-[90%] w-full lg:mx-auto mt-5 h-fit">
         <!-- Heading start..... -->
         <header class="navbar lg:flex lg:items-center">
             <a href="#home" class="logo lg:flex lg:space-x-2 lg:items-center">
@@ -46,8 +47,8 @@
             <!-- All Microsoft modal box start -->
             <div class="modal-container h-screen w-full absolute top-0 left-0 hidden z-50">
                 <div
-                    class="modal-body h-[400px] border w-4/5 absolute top-14 right-10 bg-white shadow-[5px_20px_60px_-15px_rgba(0,0,0,0.3)]">
-                    <ul class="heading flex lg:space-x-20 text-sm font-bold  pt-5 lg:pr-1 select-none">
+                    class="modal-body h-[400px] border w-4/5 absolute top-14 right-10 bg-white shadow-[10px_30px_60px_-15px_rgba(0,0,0,0.4)]">
+                    <ul class="heading flex lg:space-x-20 text-xs font-bold  pt-5 lg:pr-1 select-none">
                         <li class="mx-7">
                             Software
                             <ul class="font-medium lg:space-y-5 mt-8 lg:flex flex-col text-sm">
@@ -175,10 +176,83 @@
                 </div>
 
             </div>
-        </div>
+        </div> <!-- Home page ends -->
 
-        <!-- Home page ends -->
-    </div>
+        <!-- Cards start -->
+        <div class="cards mt-10 grid lg:grid-cols-4 lg:grid-rows-1 md:grid-cols-2 md:grid-rows-2 cursor-pointer">
+            <div class="ms365  grid justify-evenly p-3 rounded-sm ">
+                <img src="images/ms365.jpg" alt="Microsoft 365" class="mb-5 w-full">
+                <div class="heading font-semibold text-xl">Microsoft 365</div>
+                <div class="para text-md">
+                    Premium Office apps , extra cloud storage, advanced security, and more - all in one convenient
+                    subscription.
+                </div>
+                <div class="btns flex text-md space-x-4">
+                    <div
+                        class="btn py-2 text-blue-600 hover:space-x-2 transition-all duration-100 w-fit relative top-6">
+                        <button class="underline-on-hover relative inline-block transition-all duration-100">For upto 6
+                            peoples</button><i
+                            class="fa-solid fa-angle-right inline-block mx-1 transition-all duration-100"></i>
+                    </div>
+                    <div
+                        class="btn py-2 text-blue-600 hover:space-x-2 transition-all duration-100 w-fit relative top-6">
+                        <button class="underline-on-hover relative inline-block transition-all duration-100"> For upto 1
+                            person
+                        </button><i class="fa-solid fa-angle-right inline-block mx-1 transition-all duration-100"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="msedge p-3 rounded-sm ">
+                <img src="images/msedge.jpg" alt="Microsoft 365" class="mb-5 w-full">
+                <div class="heading font-semibold text-xl">Microsoft Edge</div>
+                <div class="para text-md">
+                    World-class performance with more privacy, more productivity and more value while your browse.
+                </div>
+                <div class="btns flex text-md space-x-4">
+                    <div
+                        class="btn py-2 text-blue-600 hover:space-x-2 transition-all duration-100 w-fit relative top-6">
+                        <button class="underline-on-hover relative inline-block transition-all duration-100"> Download
+                            now
+                        </button><i class="fa-solid fa-angle-right inline-block mx-1 transition-all duration-100"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ms365 p-3 rounded-sm ">
+                <img src="images/msonedrive.jpg" alt="Microsoft 365" class="mb-5 w-full">
+                <div class="heading font-semibold text-xl">Microsoft OneDrive</div>
+                <div class="para text-md">
+                    Save your files and photos to OneDrive and access them from any device , anywhere.
+                </div>
+                <div class="btns flex text-md space-x-4">
+
+                    <div
+                        class="btn py-2 text-blue-600 hover:space-x-2 transition-all duration-100 w-fit relative top-6">
+                        <button class="underline-on-hover relative inline-block transition-all duration-100"> Learn more
+                        </button><i class="fa-solid fa-angle-right inline-block mx-1 transition-all duration-100"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="msonenote  p-3 rounded-sm">
+                <img src="images/ms365.jpg" alt="Microsoft one note" class="mb-5 w-full">
+                <div class="heading font-semibold text-xl">OneNote</div>
+                <div class="para text-md">
+                    Organize your notes and your life.
+                </div>
+                <div class="btns flex text-md space-x-4">
+                    <div
+                        class="btn py-2 text-blue-600 hover:space-x-2 transition-all duration-100 w-fit relative top-6">
+                        <button class="underline-on-hover relative inline-block transition-all duration-100"> Learn more
+                        </button><i class="fa-solid fa-angle-right inline-block mx-1 transition-all duration-100"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div> <!-- Cards end -->
+
+    </div> <!-- ...container end -->
     <script src=" fontawesome/all.min.js"></script>
     <script src="controle/app.js"></script>
 </body>

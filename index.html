@@ -11,34 +11,35 @@
     <title>Microsoft</title>
 </head>
 
-<body class="scroll-smooth">
+<body class="scroll-smooth w-full">
     <!-- container start -->
-    <div class="container lg:w-[90%] w-full lg:mx-auto mt-5 h-fit overflow-x-hidden">
+    <div class="container lg:w-[90%] w-full lg:mx-auto mt-5 h-fit overflow-x-hidden max-w-none">
+        <i class="fa-solid fa-magnifying-glass left-10 text-gray-600 inline-block  md:hidden absolute"></i>
         <!-- Heading start -->
-        <header class="navbar lg:flex lg:items-center">
-            <a href="#home" class="logo lg:flex lg:space-x-2 lg:items-center">
+        <header class="navbar flex items-center">
+            <a href="#home" class="logo flex space-x-2 items-center md:mx-0 mx-auto md:w-auto w-1/2 justify-end">
                 <img src="images/logo.jpg" alt="Microsoft" class="w-6 z-50">
                 <div class="para text-gray-700 font-semibold lg:text-xl">Microsoft</div>
             </a>
             <!-- Nav items left start -->
-            <ul class="nav-left lg:flex lg:items-center lg:ml-9 lg:space-x-4 lg:text-xs">
-                <li><a href="#ms365" class="underline-on-hover lg:relative lg:py-1">Microsoft 365 </a></li>
-                <li><a href=" #office" class="underline-on-hover lg:relative lg:py-1">Office</a></li>
-                <li><a href="#windows" class="underline-on-hover lg:relative lg:py-1">Windows</a></li>
-                <li><a href="#support" class="underline-on-hover lg:relative lg:py-1">Support</a></li>
+            <ul class="nav-left flex items-center ml-9 space-x-4 text-xs">
+                <li><a href="#ms365" class="underline-on-hover lg:py-1 hidden md:inline-block">Microsoft 365 </a></li>
+                <li><a href=" #office" class="underline-on-hover  lg:py-1 hidden md:inline-block">Office</a></li>
+                <li><a href="#windows" class="underline-on-hover lg:py-1 hidden md:inline-block">Windows</a></li>
+                <li><a href="#support" class="underline-on-hover lg:py-1 hidden md:inline-block">Support</a></li>
             </ul>
             <!-- Nav items left end... -->
 
             <!--  Nav items right start-->
-            <ul class="nav-right lg:ml-auto lg:flex lg:space-x-5 lg:text-sm">
+            <ul class="nav-right ml-auto flex space-x-5 text-sm">
                 <li class="dropdown">
                     <a href="#allms"
-                        class="show-all-microsoft underline-on-hover lg:relative lg:py-1 lg:text-xs inline-block">All
+                        class="show-all-microsoft underline-on-hover lg:relative lg:py-1 lg:text-xs hidden md:inline-block">All
                         Microsoft <i class="fa-solid fa-caret-down text-gray-600 inline-block ml-1"></i></a>
                 </li>
 
-                <li><a href="#search" class="underline-on-hover lg:relative lg:py-1">
-                        Search <i class="fa-solid fa-magnifying-glass text-gray-600 inline-block ml-1"></i></a>
+                <li><a href="#search" class="underline-on-hover lg:relative   hidden md:inline-block">
+                        Search <i class="fa-solid fa-magnifying-glass text-gray-600 inline-block ml-1 "></i></a>
                 </li>
                 <li><a href="#card" class="underline-on-hover lg:relative lg:py-1">
                         Cart <i class="fa-solid fa-shopping-cart text-gray-600 inline-block ml-1"></i></a>
@@ -50,13 +51,14 @@
             <!-- Nav items right end...-->
 
             <!-- All Microsoft modal box start -->
-            <div class="modal-container h-[364vh] w-full absolute top-0 left-0 hidden z-50">
+            <div class="modal-container h-[360vh] w-full absolute top-0 left-0 hidden z-50">
                 <div
-                    class="modal-body h-[400px] border w-4/5 absolute top-14 right-10 bg-white shadow-[10px_30px_60px_-15px_rgba(0,0,0,0.4)]">
-                    <ul class="heading flex lg:space-x-20 text-xs font-bold  pt-5 lg:pr-1 select-none">
+                    class="modal-body xl:h-[400px] lg:h-[800px] h-screen border w-4/5 absolute top-14 right-10 bg-white shadow-[10px_30px_60px_-15px_rgba(0,0,0,0.4)]">
+                    <ul
+                        class="heading xl:flex xl:space-x-18 text-xs font-bold grid md:grid-cols-3 md:grid-rows-2 md:gap-8  pt-5 lg:pr-1  select-none">
                         <li class="mx-7">
                             Software
-                            <ul class="font-medium lg:space-y-5 mt-8 lg:flex flex-col text-sm">
+                            <ul class="font-medium space-y-5 mt-8 flex flex-col text-sm">
                                 <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Windows
                                     App</li>
                                 <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">One Drive
@@ -73,7 +75,7 @@
                         </li>
                         <li>
                             PCs & Devices
-                            <ul class="font-medium lg:space-y-5 mt-8 lg:flex flex-col text-sm">
+                            <ul class="font-medium space-y-5 mt-8 flex flex-col text-sm">
                                 <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Shop Xbox
                                 </li>
                                 <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Accessories
@@ -81,7 +83,7 @@
                             </ul>
                         </li>
                         <li>Entertainment
-                            <ul class="font-medium lg:space-y-5 mt-8 lg:flex flex-col text-sm">
+                            <ul class="font-medium space-y-5 mt-8 flex flex-col text-sm">
                                 <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Xbox games
                                 </li>
                                 <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">PC games
@@ -91,8 +93,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>Business
-                            <ul class="font-medium lg:space-y-5 mt-8 lg:flex flex-col text-sm">
+                        <li class="md:mx-7 ">Business
+                            <ul class="font-medium space-y-5 mt-8 flex flex-col text-sm">
                                 <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Microsoft
                                     Cloud
                                 </li>
@@ -114,30 +116,30 @@
                             </ul>
                         </li>
                         <li>Developer & IT
-                            <ul class="font-medium lg:space-y-5 mt-8 lg:flex flex-col text-sm">
+                            <ul class="font-medium space-y-5 mt-8 flex flex-col text-sm">
                                 <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">. NET
                                 </li>
-                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Visual
+                                <li class="underline-on-hover  cursor-pointer inline-block w-fit">Visual
                                     studio
                                 </li>
-                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Windows
+                                <li class="underline-on-hover  cursor-pointer inline-block w-fit">Windows
                                     Server
                                 </li>
-                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Windows dev
+                                <li class="underline-on-hover  cursor-pointer inline-block w-fit">Windows dev
                                     center
                                 </li>
-                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Docs
+                                <li class="underline-on-hover  cursor-pointer inline-block w-fit">Docs
                                 </li>
-                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Power
+                                <li class="underline-on-hover  cursor-pointer inline-block w-fit">Power
                                     Platform
                                 </li>
-                                <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Power
+                                <li class="underline-on-hover cursor-pointer inline-block w-fit">Power
                                     Apps
                                 </li>
                             </ul>
                         </li>
                         <li>Other
-                            <ul class="font-medium lg:space-y-5 mt-8 lg:flex flex-col text-sm">
+                            <ul class="font-medium space-y-5 mt-8 flex flex-col text-sm">
                                 <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Free
                                     downloads & security
                                 </li>
@@ -165,7 +167,7 @@
         <div class="home-page cursor-pointer mt-4">
             <div class="home-page-content mx-20 h-4/5 w-1/2 flex items-start justify-center flex-col space-y-1">
                 <button class="bg-primary new-button">New </button>
-                <div class="heading text-white text-[34px] font-semibold opacity-95 leading-10">
+                <div class="heading text-white lg:text-[34px] text-lg font-semibold opacity-95 leading-10">
                     Designed for life today – and<br> tomorrow
                 </div>
                 <div class="content text-white">
@@ -185,7 +187,7 @@
 
         <!-- Cards start -->
         <div
-            class="cards mt-10 lg:grid md:grid lg:grid-cols-4 lg:grid-rows-1 md:grid-cols-2 md:grid-rows-2 flex flex-col cursor-pointer">
+            class="cards mt-10 lg:grid md:grid lg:grid-cols-4 lg:grid-rows-1 md:grid-cols-2 md:grid-rows-2 md:w-auto w-full flex flex-col cursor-pointer">
             <div class="ms365  grid justify-evenly p-3 rounded-sm ">
                 <img src="images/ms365.jpg" alt="Microsoft 365" class="mb-5 w-full hover:opacity-80">
                 <div class="heading font-semibold text-xl">Microsoft 365</div>
@@ -287,7 +289,7 @@
         <!-- Cards start -->
         <div
             class="cards mt-5 lg:grid md:grid lg:grid-cols-4 lg:grid-rows-1 md:grid-cols-2 md:grid-rows-2 flex flex-col cursor-pointer">
-            <div class="ms365  grid justify-evenly p-3 rounded-sm ">
+            <div class="msteams  p-3 rounded-sm ">
                 <img src="images/msteams.jpg" alt="Microsoft 365" class="mb-5 w-full hover:opacity-80">
                 <div class="heading font-semibold text-xl">Get Microsoft teams for free</div>
                 <div class="para text-md">
@@ -352,11 +354,11 @@
 
             </div>
         </div> <!-- Cards end -->
-        <div class="covid19 bg-gray-200 h-40 flex flex-col items-center justify-center mt-10">
-            <div class="heading text-4xl font-semibold mb-3">
+        <div class="covid19 bg-gray-200 h-[20vh] flex flex-col items-center justify-center mt-10">
+            <div class="heading lg:text-4xl text-2xl font-semibold mb-3">
                 Microsoft’s response to COVID-19
             </div>
-            <div class="para">
+            <div class="para lg:text-base text-sm">
                 Read how we’re responding to the COVID-19 outbreak, and get resources to help.
             </div>
             <div class="btns flex text-md space-x-4 -mt-5">
@@ -367,7 +369,7 @@
             </div>
         </div>
 
-        <div class="followms inline-flex w-1/5 justify-evenly items-center h-40">
+        <div class="follows inline-flex w-14/5 space-x-4 pl-5 lg:pl-0  items-center h-40">
             <span class="inline-block "> Follow Microsoft</span>
             <a href="https://web.facebook.com/profile.php?id=100030375951524&sk=map" class="facebook inline-block">
                 <i class="fab fa-facebook-f fa-facebook-square text-4xl text-[#3b5998]"></i></a>
@@ -380,9 +382,10 @@
     </div> <!-- ...container end -->
 
     <!-- footer start -->
-    <footer class="footer bg-slate-100 xl:h-[300px] px-20 h-fit">
+    <footer class="footer bg-slate-100 xl:h-[300px] md:px-20 px-2 h-fit">
 
-        <div class="footer-body flex py-5 xl:space-y-0 space-y-2 xl:space-x-20 xl:flex-row flex-col">
+        <div
+            class="footer-body xl:flex flex py-5 md:grid md:grid-cols-3 md:grid-rows-2 xl:space-y-0 space-y-2 xl:space-x-20 xl:flex-row flex-col">
             <div class="msstore">
                 <div class="heading text-lg opacity-70 font-semibold">
                     Microsoft Store
@@ -474,14 +477,15 @@
             </div>
 
         </div>
-        <div class="final-foo flex mt-5">
+        <div class="final-footer flex flex-col lg:flex-row mt-5">
             <div class="language flex items-center text-gray-700 text-xs mr-auto">
                 <i class=" fa-solid fa-earth-americas text-xl inline-block mr-2"></i> <span
                     class="inline-block cursor-pointer lg:relative w-fit underline-on-hover">English
                     (pakistan)</span>
             </div>
-            <div class="footer-items">
-                <ul class="flex items-center text-gray-700 text-xs space-x-4">
+            <div class="footer-items w-full lg:w-2/3 lg:mt-0 mt-4">
+                <ul
+                    class="lg:flex lg:items-center text-gray-700 text-xs w-full mr-auto md:justify-around grid grid-cols-4 grid-rows-2 gap-3">
                     <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Contact Microsoft
                     </li>
                     <li class="underline-on-hover lg:relative cursor-pointer inline-block w-fit">Privacy

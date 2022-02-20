@@ -1,11 +1,24 @@
-.underline-on-hover:hover::after {
+.underline-on-hover {
+  position: relative;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.underline-on-hover::after {
+  height: 0px;
   content: "";
   display: block;
   position: absolute;
   bottom: 0;
   left: -2;
   width: 100%;
-  height: 1px;
+  height: 3px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.underline-on-hover:hover::after {
+  height: 2px;
   background: #000;
 }
 
@@ -22,7 +35,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 550px;
+  height: 60vh;
 }
 
 .new-button {
@@ -41,7 +54,7 @@
 
 .ms-for-android {
   background-image: url(../images/outlookforandroid.jpg);
-  height: 550px;
+  height: 60vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
